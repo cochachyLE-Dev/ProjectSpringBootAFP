@@ -6444,3 +6444,73 @@ io.jsonwebtoken.SignatureException: JWT signature does not match locally compute
 2022-08-01 17:14:55.533  INFO 20356 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
 2022-08-01 17:14:55.533  WARN 20356 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
 2022-08-01 17:16:01.952  INFO 20356 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:05:06.651  INFO 21208 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 21208 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:05:06.658  INFO 21208 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:05:07.453  INFO 21208 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:05:07.469  INFO 21208 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:05:07.471  INFO 21208 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:05:07.567  INFO 21208 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:05:07.567  INFO 21208 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 882 ms
+2022-08-01 19:05:07.887  INFO 21208 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:05:07.973  INFO 21208 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@bd4ee01, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7f93f4c, org.springframework.security.web.context.SecurityContextPersistenceFilter@2b682e9, org.springframework.security.web.header.HeaderWriterFilter@4b07cad0, org.springframework.security.web.authentication.logout.LogoutFilter@14874a5d, pe.com.bootcamp.domain.JwtRequestFilter@6282b9f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4fbb1144, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2e2b9f53, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@598657cd, org.springframework.security.web.session.SessionManagementFilter@2026fbff, org.springframework.security.web.access.ExceptionTranslationFilter@2347b7af, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@14be750c]
+2022-08-01 19:05:08.137  INFO 21208 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:05:08.138  INFO 21208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:05:08.152  INFO 21208 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:05:08.170  INFO 21208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:05:08.259  INFO 21208 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:05:08.278  INFO 21208 --- [main] p.c.b.Application                        : Started Application in 1.971 seconds (JVM running for 2.633)
+2022-08-01 19:05:15.644  INFO 21208 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:05:15.645  INFO 21208 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:05:15.645  INFO 21208 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:05:15.663  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.663  WARN 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.712  INFO 21208 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.712  WARN 21208 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.713  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.714  WARN 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.712  INFO 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.715  WARN 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.717  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.717  WARN 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.717  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.718  WARN 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.719  INFO 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.720  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.729  INFO 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.729  WARN 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.729  INFO 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.730  WARN 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.729  INFO 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.730  INFO 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.731  WARN 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.731  WARN 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.735  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.737  WARN 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.731  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.738  WARN 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.731  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.738  WARN 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.739  INFO 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.739  WARN 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.744  INFO 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.744  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.746  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.747  WARN 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.747  INFO 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.748  WARN 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.750  INFO 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.751  WARN 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.783  INFO 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.783  WARN 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.795  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.795  WARN 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.865  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.865  WARN 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.872  INFO 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.873  WARN 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.892  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.892  WARN 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:15.901  INFO 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:15.901  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:05:16.015  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:05:16.015  WARN 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String

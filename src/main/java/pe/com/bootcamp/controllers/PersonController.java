@@ -19,6 +19,5 @@ public class PersonController {
 	@PostMapping(path="/", produces = "application/json")
 	public ResultBase create(Person person) {					
 		return personData.Create(person);  
-	}
-	
+	}	
 }
