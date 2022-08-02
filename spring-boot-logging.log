@@ -6514,3 +6514,840 @@ io.jsonwebtoken.SignatureException: JWT signature does not match locally compute
 2022-08-01 19:05:15.901  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
 2022-08-01 19:05:16.015  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
 2022-08-01 19:05:16.015  WARN 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:24:01.961  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:24:01.961  WARN 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:24:47.946  INFO 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:24:47.946  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:24:47.981  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:24:47.981  WARN 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:24:54.099  INFO 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:24:54.099  WARN 21208 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:24:54.127  INFO 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:24:54.127  WARN 21208 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:31:13.370  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:31:13.370  INFO 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:31:13.371  WARN 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:31:13.371  WARN 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:31:46.588  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTkzOTMwMTcsImlhdCI6MTY1OTM5MTIxN30.lUeGrCB3C6cL2QKMIX34NHBNHbkbS3KSkvrFfLGlFdsS-HnUchrOtm1tHKINunWgnWUO_WqpvAAjeVNFaLj5bg
+2022-08-01 19:31:46.588  INFO 21208 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTkzOTMwMTcsImlhdCI6MTY1OTM5MTIxN30.lUeGrCB3C6cL2QKMIX34NHBNHbkbS3KSkvrFfLGlFdsS-HnUchrOtm1tHKINunWgnWUO_WqpvAAjeVNFaLj5bg
+2022-08-01 19:31:51.928  INFO 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:31:51.928  WARN 21208 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:32:54.197  INFO 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:32:54.197  WARN 21208 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:33:23.940  INFO 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 19:33:23.940  WARN 21208 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 19:33:37.158  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MDIxMTIsImlhdCI6MTY1OTQwMDMxMn0.0dAQD1vNy33MplBKfreMDID-xxWQSxmRL02j8i6nMOT6bSzQuOeOO_ZDcuzv7Y5zpesB4cbOLj4H5COF7qmx6g
+2022-08-01 19:33:37.158  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MDIxMTIsImlhdCI6MTY1OTQwMDMxMn0.0dAQD1vNy33MplBKfreMDID-xxWQSxmRL02j8i6nMOT6bSzQuOeOO_ZDcuzv7Y5zpesB4cbOLj4H5COF7qmx6g
+2022-08-01 19:33:37.160  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:33:37.162  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:33:37.167  INFO 21208 --- [http-nio-8084-exec-5] p.c.b.c.AuthenticationController         : requestTokenHeader: true
+2022-08-01 19:33:51.496  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:33:51.496  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:33:51.498  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:33:51.499  INFO 21208 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:35:53.432  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:35:53.433  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:35:53.434  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:35:53.434  INFO 21208 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:38:22.717  INFO 21208 --- [RMI TCP Connection(43)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:38:29.661  INFO 27040 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 27040 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:38:29.669  INFO 27040 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:38:30.444  INFO 27040 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:38:30.461  INFO 27040 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:38:30.461  INFO 27040 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:38:30.562  INFO 27040 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:38:30.562  INFO 27040 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 858 ms
+2022-08-01 19:38:30.841  INFO 27040 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:38:30.923  INFO 27040 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@4efb13f1, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@7bb4ed71, org.springframework.security.web.context.SecurityContextPersistenceFilter@4b07cad0, org.springframework.security.web.header.HeaderWriterFilter@45cd8607, org.springframework.security.web.authentication.logout.LogoutFilter@7cc1f72c, pe.com.bootcamp.domain.JwtRequestFilter@457a5b2d, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@4e94669c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@12e5d3e1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5112b7, org.springframework.security.web.session.SessionManagementFilter@71dd4624, org.springframework.security.web.access.ExceptionTranslationFilter@451816fd, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@322b09da]
+2022-08-01 19:38:31.086  INFO 27040 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:38:31.086  INFO 27040 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:38:31.098  INFO 27040 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:38:31.116  INFO 27040 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:38:31.198  INFO 27040 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:38:31.217  INFO 27040 --- [main] p.c.b.Application                        : Started Application in 1.873 seconds (JVM running for 2.516)
+2022-08-01 19:38:39.345  INFO 27040 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:38:39.346  INFO 27040 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:38:39.347  INFO 27040 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:38:39.359  INFO 27040 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:38:39.360  INFO 27040 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:38:39.406  INFO 27040 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:38:39.407  INFO 27040 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:38:39.474  INFO 27040 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:pe.com.bootcamp.domain.entities.WithdrawalOfFundRequest@6a90270d
+2022-08-01 19:39:41.596  INFO 27040 --- [RMI TCP Connection(9)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:39:54.796  INFO 14060 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 14060 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:39:54.806  INFO 14060 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:39:55.737  INFO 14060 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:39:55.753  INFO 14060 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:39:55.754  INFO 14060 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:39:55.840  INFO 14060 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:39:55.841  INFO 14060 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1004 ms
+2022-08-01 19:39:56.140  INFO 14060 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:39:56.227  INFO 14060 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@66298fe9, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c262f2f, org.springframework.security.web.context.SecurityContextPersistenceFilter@72b40f87, org.springframework.security.web.header.HeaderWriterFilter@384472bf, org.springframework.security.web.authentication.logout.LogoutFilter@8b670c0, pe.com.bootcamp.domain.JwtRequestFilter@1142d377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@19bf47fc, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@507049f2, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@5563bb40, org.springframework.security.web.session.SessionManagementFilter@a3b858f, org.springframework.security.web.access.ExceptionTranslationFilter@7185e611, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@68e24e7]
+2022-08-01 19:39:56.464  INFO 14060 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:39:56.465  INFO 14060 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:39:56.481  INFO 14060 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:39:56.510  INFO 14060 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:39:56.617  INFO 14060 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:39:56.634  INFO 14060 --- [main] p.c.b.Application                        : Started Application in 2.153 seconds (JVM running for 2.856)
+2022-08-01 19:40:13.398  INFO 14060 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:40:13.398  INFO 14060 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:40:13.399  INFO 14060 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:40:13.410  INFO 14060 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:40:13.410  INFO 14060 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:40:13.452  INFO 14060 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:40:13.453  INFO 14060 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:40:13.508  INFO 14060 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:pe.com.bootcamp.domain.entities.WithdrawalOfFundRequest@3527b3ef
+2022-08-01 19:40:39.468  INFO 14060 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:40:39.469  INFO 14060 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:40:39.469  INFO 14060 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:40:39.470  INFO 14060 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:40:39.473  INFO 14060 --- [http-nio-8084-exec-3] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:pe.com.bootcamp.domain.entities.WithdrawalOfFundRequest@4c8ef0e1
+2022-08-01 19:41:25.369  INFO 14060 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:41:30.313  INFO 13324 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 13324 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:41:30.324  INFO 13324 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:41:31.055  INFO 13324 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:41:31.070  INFO 13324 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:41:31.070  INFO 13324 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:41:31.152  INFO 13324 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:41:31.152  INFO 13324 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 799 ms
+2022-08-01 19:41:31.437  INFO 13324 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:41:31.522  INFO 13324 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@15e08615, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@19dac2d6, org.springframework.security.web.context.SecurityContextPersistenceFilter@5ed31735, org.springframework.security.web.header.HeaderWriterFilter@18d30e7, org.springframework.security.web.authentication.logout.LogoutFilter@782ac148, pe.com.bootcamp.domain.JwtRequestFilter@35e98af, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5a4c98d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2b682e9, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7e2bc2f4, org.springframework.security.web.session.SessionManagementFilter@66f2ec1c, org.springframework.security.web.access.ExceptionTranslationFilter@a3b858f, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@60a01cb]
+2022-08-01 19:41:31.684  INFO 13324 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:41:31.685  INFO 13324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:41:31.697  INFO 13324 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:41:31.715  INFO 13324 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:41:31.801  INFO 13324 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:41:31.822  INFO 13324 --- [main] p.c.b.Application                        : Started Application in 1.814 seconds (JVM running for 2.479)
+2022-08-01 19:41:45.005  INFO 13324 --- [http-nio-8084-exec-3] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:41:45.006  INFO 13324 --- [http-nio-8084-exec-3] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:41:45.007  INFO 13324 --- [http-nio-8084-exec-3] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:41:45.019  INFO 13324 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:41:45.019  INFO 13324 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:41:45.060  INFO 13324 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:41:45.061  INFO 13324 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:41:45.122  INFO 13324 --- [http-nio-8084-exec-3] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:43:22.091  INFO 13324 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:43:27.581  INFO 9052 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 9052 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:43:27.589  INFO 9052 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:43:28.310  INFO 9052 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:43:28.323  INFO 9052 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:43:28.323  INFO 9052 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:43:28.403  INFO 9052 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:43:28.403  INFO 9052 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 779 ms
+2022-08-01 19:43:28.684  INFO 9052 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:43:28.771  INFO 9052 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1930a804, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@bd4ee01, org.springframework.security.web.context.SecurityContextPersistenceFilter@351e89fc, org.springframework.security.web.header.HeaderWriterFilter@2864f887, org.springframework.security.web.authentication.logout.LogoutFilter@12365bd8, pe.com.bootcamp.domain.JwtRequestFilter@11c78080, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@15586843, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@79d63a4f, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@7f93f4c, org.springframework.security.web.session.SessionManagementFilter@668a32a4, org.springframework.security.web.access.ExceptionTranslationFilter@71dd4624, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1c72189f]
+2022-08-01 19:43:28.926  INFO 9052 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:43:28.926  INFO 9052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:43:28.940  INFO 9052 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:43:28.956  INFO 9052 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:43:29.043  INFO 9052 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:43:29.061  INFO 9052 --- [main] p.c.b.Application                        : Started Application in 1.797 seconds (JVM running for 2.453)
+2022-08-01 19:43:51.036  INFO 9052 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:43:51.037  INFO 9052 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:43:51.038  INFO 9052 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 19:43:51.051  INFO 9052 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:43:51.052  INFO 9052 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:43:51.100  INFO 9052 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:43:51.102  INFO 9052 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:43:51.170  INFO 9052 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:43:51.171  WARN 9052 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Message:No value present
+2022-08-01 19:43:51.171  WARN 9052 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 19:45:55.070  INFO 9052 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:46:12.184  INFO 5404 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 5404 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:46:12.191  INFO 5404 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:46:12.958  INFO 5404 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:46:12.973  INFO 5404 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:46:12.973  INFO 5404 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:46:13.057  INFO 5404 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:46:13.057  INFO 5404 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 822 ms
+2022-08-01 19:46:13.345  INFO 5404 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:46:13.427  INFO 5404 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@1c72189f, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@14be750c, org.springframework.security.web.context.SecurityContextPersistenceFilter@66f2ec1c, org.springframework.security.web.header.HeaderWriterFilter@4d67d5a4, org.springframework.security.web.authentication.logout.LogoutFilter@3dc82e6a, pe.com.bootcamp.domain.JwtRequestFilter@372461a9, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@12e5d3e1, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@2026fbff, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@58882a93, org.springframework.security.web.session.SessionManagementFilter@4e94669c, org.springframework.security.web.access.ExceptionTranslationFilter@7493d937, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5563bb40]
+2022-08-01 19:46:13.582  INFO 5404 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:46:13.583  INFO 5404 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:46:13.596  INFO 5404 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:46:13.617  INFO 5404 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:46:13.697  INFO 5404 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:46:13.718  INFO 5404 --- [main] p.c.b.Application                        : Started Application in 1.84 seconds (JVM running for 2.492)
+2022-08-01 19:46:19.967  INFO 5404 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:46:19.968  INFO 5404 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:46:19.969  INFO 5404 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 19:46:19.982  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:46:19.983  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:46:20.038  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:46:20.039  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:46:20.101  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:46:20.103  INFO 5404 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : GetPersonByIdentNumber:Person [firstName=null, lastName=null, dateOfBirth=null, maritalStatus=null, ubigeo=null, nationatity=null]
+2022-08-01 19:51:44.935  INFO 5404 --- [RMI TCP Connection(15)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:51:51.643  INFO 27368 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 27368 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:51:51.650  INFO 27368 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:51:52.391  INFO 27368 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:51:52.404  INFO 27368 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:51:52.405  INFO 27368 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:51:52.490  INFO 27368 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:51:52.490  INFO 27368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 807 ms
+2022-08-01 19:51:52.594  WARN 27368 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'personData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\PersonData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.PersonData]: Constructor threw exception; nested exception is java.time.format.DateTimeParseException: Text '1993/05/03' could not be parsed at index 4
+2022-08-01 19:51:52.598  INFO 27368 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-08-01 19:51:52.609  INFO 27368 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 19:51:52.627 ERROR 27368 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'personData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\PersonData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.PersonData]: Constructor threw exception; nested exception is java.time.format.DateTimeParseException: Text '1993/05/03' could not be parsed at index 4
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at pe.com.bootcamp.Application.main(Application.java:10) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\PersonData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.PersonData]: Constructor threw exception; nested exception is java.time.format.DateTimeParseException: Text '1993/05/03' could not be parsed at index 4
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.PersonData]: Constructor threw exception; nested exception is java.time.format.DateTimeParseException: Text '1993/05/03' could not be parsed at index 4
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: java.time.format.DateTimeParseException: Text '1993/05/03' could not be parsed at index 4
+	at java.time.format.DateTimeFormatter.parseResolved0(DateTimeFormatter.java:2052) ~[?:?]
+	at java.time.format.DateTimeFormatter.parse(DateTimeFormatter.java:1954) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:430) ~[?:?]
+	at java.time.LocalDate.parse(LocalDate.java:415) ~[?:?]
+	at pe.com.bootcamp.data.PersonData.getDataDemo(PersonData.java:83) ~[classes/:?]
+	at pe.com.bootcamp.data.PersonData.<init>(PersonData.java:19) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+
+2022-08-01 19:52:58.907  INFO 8356 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 8356 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:52:58.916  INFO 8356 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:52:59.679  INFO 8356 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:52:59.694  INFO 8356 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:52:59.694  INFO 8356 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:52:59.783  INFO 8356 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:52:59.784  INFO 8356 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2022-08-01 19:53:00.078  INFO 8356 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:53:00.171  INFO 8356 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6f3b13d0, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2964511, org.springframework.security.web.context.SecurityContextPersistenceFilter@2d74cbbd, org.springframework.security.web.header.HeaderWriterFilter@4586a8aa, org.springframework.security.web.authentication.logout.LogoutFilter@667797f, pe.com.bootcamp.domain.JwtRequestFilter@4fecf308, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@23afc725, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@7e58f697, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6e9a10cd, org.springframework.security.web.session.SessionManagementFilter@49cb5030, org.springframework.security.web.access.ExceptionTranslationFilter@1d8e9d3e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@1570cad0]
+2022-08-01 19:53:00.343  INFO 8356 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:53:00.344  INFO 8356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:53:00.362  INFO 8356 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:53:00.389  INFO 8356 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:53:00.496  INFO 8356 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:53:00.515  INFO 8356 --- [main] p.c.b.Application                        : Started Application in 1.937 seconds (JVM running for 2.615)
+2022-08-01 19:53:08.979  INFO 8356 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:53:08.979  INFO 8356 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:53:08.981  INFO 8356 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 2 ms
+2022-08-01 19:53:08.999  INFO 8356 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:53:08.999  INFO 8356 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:53:09.066  INFO 8356 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:53:09.067  INFO 8356 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:53:09.153  INFO 8356 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:53:09.155  WARN 8356 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Message:No value present
+2022-08-01 19:53:09.156  WARN 8356 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 19:53:42.974  INFO 8356 --- [RMI TCP Connection(7)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:53:46.518  INFO 33460 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 33460 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:53:46.527  INFO 33460 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:53:47.269  INFO 33460 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:53:47.283  INFO 33460 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:53:47.283  INFO 33460 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:53:47.366  INFO 33460 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:53:47.366  INFO 33460 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2022-08-01 19:53:47.668  INFO 33460 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:53:47.752  INFO 33460 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@65d73bd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@27896d3b, org.springframework.security.web.context.SecurityContextPersistenceFilter@49cb5030, org.springframework.security.web.header.HeaderWriterFilter@7b7068d8, org.springframework.security.web.authentication.logout.LogoutFilter@7f8c3646, pe.com.bootcamp.domain.JwtRequestFilter@11c78080, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@30fbc23, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@561d88ee, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ed7dd70, org.springframework.security.web.session.SessionManagementFilter@6481dce5, org.springframework.security.web.access.ExceptionTranslationFilter@21527b8, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@2342f1ff]
+2022-08-01 19:53:47.925  INFO 33460 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:53:47.926  INFO 33460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:53:47.941  INFO 33460 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:53:47.964  INFO 33460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:53:48.074  INFO 33460 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:53:48.096  INFO 33460 --- [main] p.c.b.Application                        : Started Application in 1.891 seconds (JVM running for 2.549)
+2022-08-01 19:53:53.014  INFO 33460 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:53:53.014  INFO 33460 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:53:53.015  INFO 33460 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:53:53.030  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:53:53.030  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:53:53.083  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:53:53.085  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:53:53.155  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:53:53.156  INFO 33460 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : GetPersonByIdentNumber:Person [firstName=Luis Eduardo, lastName=Cochachi Chamorro, dateOfBirth=1993-05-03, maritalStatus=null, ubigeo=null, nationatity=null, affiliateCode=540551LCCHM2]
+2022-08-01 19:55:12.270  INFO 33460 --- [RMI TCP Connection(11)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 19:55:18.192  INFO 16112 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 16112 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 19:55:18.199  INFO 16112 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 19:55:18.942  INFO 16112 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 19:55:18.958  INFO 16112 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 19:55:18.959  INFO 16112 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 19:55:19.043  INFO 16112 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 19:55:19.044  INFO 16112 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 810 ms
+2022-08-01 19:55:19.330  INFO 16112 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 19:55:19.414  INFO 16112 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@44bbb7c6, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@2342f1ff, org.springframework.security.web.context.SecurityContextPersistenceFilter@54463380, org.springframework.security.web.header.HeaderWriterFilter@1b3bec6c, org.springframework.security.web.authentication.logout.LogoutFilter@9f0fc36, pe.com.bootcamp.domain.JwtRequestFilter@79d7035, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@782ac148, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6481dce5, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3303e89e, org.springframework.security.web.session.SessionManagementFilter@360d41d0, org.springframework.security.web.access.ExceptionTranslationFilter@2e2b9f53, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@6e5f5478]
+2022-08-01 19:55:19.575  INFO 16112 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 19:55:19.575  INFO 16112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 19:55:19.587  INFO 16112 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 19:55:19.607  INFO 16112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:55:19.713  INFO 16112 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 19:55:19.751  INFO 16112 --- [main] p.c.b.Application                        : Started Application in 1.928 seconds (JVM running for 2.557)
+2022-08-01 19:55:57.452  INFO 16112 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 19:55:57.452  INFO 16112 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 19:55:57.452  INFO 16112 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 0 ms
+2022-08-01 19:55:57.465  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:55:57.466  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 19:55:57.510  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 19:55:57.511  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 19:55:57.577  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 19:55:57.578  WARN 16112 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Message:No value present
+2022-08-01 19:55:57.579  WARN 16112 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 20:03:09.772  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:03:09.774  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:03:09.776  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 20:03:09.776  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 20:03:09.780  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 20:03:09.781  WARN 16112 --- [http-nio-8084-exec-5] p.c.b.d.AffiliateData                    : Exception-Message:No value present
+2022-08-01 20:03:09.781  WARN 16112 --- [http-nio-8084-exec-5] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 20:03:46.699  INFO 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.699  WARN 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.740  INFO 16112 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.740  INFO 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.741  WARN 16112 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.741  WARN 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.745  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.745  WARN 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.745  INFO 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.745  INFO 16112 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.745  WARN 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.745  INFO 16112 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.745  WARN 16112 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.746  WARN 16112 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.748  INFO 16112 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.748  WARN 16112 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.757  INFO 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.758  WARN 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.760  INFO 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.760  WARN 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.763  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.759  INFO 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.764  WARN 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.765  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.765  WARN 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.766  INFO 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.766  WARN 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.766  INFO 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.766  WARN 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.764  WARN 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.778  INFO 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.778  WARN 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.776  INFO 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.780  WARN 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.780  INFO 16112 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.781  WARN 16112 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.783  INFO 16112 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.786  WARN 16112 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.799  INFO 16112 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.799  WARN 16112 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.834  INFO 16112 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.834  WARN 16112 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.843  INFO 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.843  WARN 16112 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.878  INFO 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.878  WARN 16112 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.923  INFO 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.924  WARN 16112 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.935  INFO 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.936  WARN 16112 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:46.950  INFO 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:46.950  WARN 16112 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:03:47.059  INFO 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:03:47.059  WARN 16112 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:04:34.103  INFO 16112 --- [RMI TCP Connection(17)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 20:04:40.852  INFO 25364 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 25364 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:04:40.860  INFO 25364 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:04:41.803  INFO 25364 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:04:41.818  INFO 25364 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:04:41.819  INFO 25364 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:04:41.930  INFO 25364 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:04:41.931  INFO 25364 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1035 ms
+2022-08-01 20:04:42.331  INFO 25364 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 20:04:42.421  INFO 25364 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@2964511, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6e9a10cd, org.springframework.security.web.context.SecurityContextPersistenceFilter@3e2d44f3, org.springframework.security.web.header.HeaderWriterFilter@3dc82e6a, org.springframework.security.web.authentication.logout.LogoutFilter@184751f3, pe.com.bootcamp.domain.JwtRequestFilter@6282b9f5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5d3f99d7, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@44384b4a, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@6ea66c33, org.springframework.security.web.session.SessionManagementFilter@23c7cb18, org.springframework.security.web.access.ExceptionTranslationFilter@360d41d0, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@21090c88]
+2022-08-01 20:04:42.616  INFO 25364 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 20:04:42.617  INFO 25364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 20:04:42.631  INFO 25364 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 20:04:42.657  INFO 25364 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:04:42.756  INFO 25364 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:04:42.774  INFO 25364 --- [main] p.c.b.Application                        : Started Application in 2.28 seconds (JVM running for 2.942)
+2022-08-01 20:05:02.373  INFO 25364 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 20:05:02.374  INFO 25364 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 20:05:02.375  INFO 25364 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 20:05:02.398  INFO 25364 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.398  WARN 25364 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.443  INFO 25364 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.445  WARN 25364 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.447  INFO 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.449  WARN 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.458  INFO 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.458  INFO 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.459  WARN 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.459  WARN 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.459  INFO 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.461  WARN 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.462  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.463  WARN 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.466  INFO 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.466  WARN 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.471  INFO 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.471  WARN 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.471  INFO 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.471  WARN 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.471  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.471  WARN 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.472  INFO 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.472  WARN 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.474  INFO 25364 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.475  WARN 25364 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.483  INFO 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.485  WARN 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.487  INFO 25364 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.488  WARN 25364 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.490  INFO 25364 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.490  WARN 25364 --- [http-nio-8084-exec-10] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.491  INFO 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.491  WARN 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.495  INFO 25364 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.496  WARN 25364 --- [http-nio-8084-exec-9] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.496  INFO 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.496  WARN 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.521  INFO 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.522  WARN 25364 --- [http-nio-8084-exec-3] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.527  INFO 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.527  WARN 25364 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.628  INFO 25364 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.628  WARN 25364 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.637  INFO 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.637  WARN 25364 --- [http-nio-8084-exec-6] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.667  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.667  WARN 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.679  INFO 25364 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.680  WARN 25364 --- [http-nio-8084-exec-8] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:05:02.802  INFO 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:null
+2022-08-01 20:05:02.802  WARN 25364 --- [http-nio-8084-exec-5] p.c.b.d.JwtRequestFilter                 : JWT Token does not begin with Bearer String
+2022-08-01 20:16:31.099  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:16:31.099  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:16:31.143  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 20:16:31.144  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 20:16:31.177  INFO 25364 --- [http-nio-8084-exec-7] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 20:16:31.177  WARN 25364 --- [http-nio-8084-exec-7] p.c.b.d.AffiliateData                    : Exception-Message:No value present
+2022-08-01 20:16:31.177  WARN 25364 --- [http-nio-8084-exec-7] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 20:24:27.014  INFO 25364 --- [RMI TCP Connection(29)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 20:24:32.518  INFO 9980 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 9980 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:24:32.523  INFO 9980 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:24:33.328  INFO 9980 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:24:33.349  INFO 9980 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:24:33.350  INFO 9980 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:24:33.446  INFO 9980 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:24:33.446  INFO 9980 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 893 ms
+2022-08-01 20:24:33.741  INFO 9980 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 20:24:33.827  INFO 9980 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e9a10cd, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@6ea66c33, org.springframework.security.web.context.SecurityContextPersistenceFilter@23afc725, org.springframework.security.web.header.HeaderWriterFilter@54463380, org.springframework.security.web.authentication.logout.LogoutFilter@46ea78f0, pe.com.bootcamp.domain.JwtRequestFilter@2f9dda71, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@561d88ee, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5cc3e49b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@59b447a4, org.springframework.security.web.session.SessionManagementFilter@30fbc23, org.springframework.security.web.access.ExceptionTranslationFilter@4586a8aa, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@d62472f]
+2022-08-01 20:24:33.990  INFO 9980 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 20:24:33.991  INFO 9980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 20:24:34.006  INFO 9980 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 20:24:34.026  INFO 9980 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:24:34.116  INFO 9980 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:24:34.135  INFO 9980 --- [main] p.c.b.Application                        : Started Application in 1.961 seconds (JVM running for 2.617)
+2022-08-01 20:24:51.829  INFO 9980 --- [http-nio-8084-exec-1] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 20:24:51.829  INFO 9980 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 20:24:51.830  INFO 9980 --- [http-nio-8084-exec-1] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 20:24:51.842  INFO 9980 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:24:51.842  INFO 9980 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:24:51.884  INFO 9980 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 20:24:51.885  INFO 9980 --- [http-nio-8084-exec-1] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 20:24:51.941  INFO 9980 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 20:24:51.941  WARN 9980 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Message:Index 0 out of bounds for length 0
+2022-08-01 20:24:51.941  WARN 9980 --- [http-nio-8084-exec-1] p.c.b.d.AffiliateData                    : Exception-Cause:null
+2022-08-01 20:26:13.621  INFO 9980 --- [RMI TCP Connection(10)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 20:26:21.138  INFO 7984 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 7984 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:26:21.146  INFO 7984 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:26:21.893  INFO 7984 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:26:21.907  INFO 7984 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:26:21.907  INFO 7984 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:26:21.991  INFO 7984 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:26:21.991  INFO 7984 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 806 ms
+2022-08-01 20:26:22.084  WARN 7984 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+2022-08-01 20:26:22.088  INFO 7984 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-08-01 20:26:22.097  INFO 7984 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 20:26:22.112 ERROR 7984 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at pe.com.bootcamp.Application.main(Application.java:10) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at pe.com.bootcamp.data.ContributionData.GetContributionByAffiliateCode(ContributionData.java:28) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.getDataDemo(AffiliateData.java:153) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.<init>(AffiliateData.java:31) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+
+2022-08-01 20:33:55.614  INFO 16892 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 16892 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:33:55.620  INFO 16892 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:33:56.381  INFO 16892 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:33:56.396  INFO 16892 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:33:56.396  INFO 16892 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:33:56.487  INFO 16892 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:33:56.488  INFO 16892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 836 ms
+2022-08-01 20:33:56.578  WARN 16892 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+2022-08-01 20:33:56.580  INFO 16892 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-08-01 20:33:56.589  INFO 16892 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 20:33:56.603 ERROR 16892 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at pe.com.bootcamp.Application.main(Application.java:10) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at pe.com.bootcamp.data.ContributionData.GetContributionByAffiliateCode(ContributionData.java:28) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.getDataDemo(AffiliateData.java:154) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.<init>(AffiliateData.java:31) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+
+2022-08-01 20:36:33.551  INFO 13712 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 13712 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:36:33.561  INFO 13712 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:36:34.280  INFO 13712 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:36:34.300  INFO 13712 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:36:34.300  INFO 13712 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:36:34.394  INFO 13712 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:36:34.394  INFO 13712 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 801 ms
+2022-08-01 20:36:34.495  WARN 13712 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+2022-08-01 20:36:34.498  INFO 13712 --- [main] o.a.c.c.StandardService                  : Stopping service [Tomcat]
+2022-08-01 20:36:34.507  INFO 13712 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2022-08-01 20:36:34.523 ERROR 13712 --- [main] o.s.b.SpringApplication                  : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'affiliateController': Unsatisfied dependency expressed through field 'affiliateData'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:659) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:639) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.22.jar:5.3.22]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.2.jar:2.7.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.2.jar:2.7.2]
+	at pe.com.bootcamp.Application.main(Application.java:10) ~[classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'affiliateData' defined in file [C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes\pe\com\bootcamp\data\AffiliateData.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [pe.com.bootcamp.data.AffiliateData]: Constructor threw exception; nested exception is java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+Caused by: java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 1
+	at jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:64) ~[?:?]
+	at jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:70) ~[?:?]
+	at jdk.internal.util.Preconditions.checkIndex(Preconditions.java:266) ~[?:?]
+	at java.util.Objects.checkIndex(Objects.java:359) ~[?:?]
+	at java.util.ArrayList.get(ArrayList.java:427) ~[?:?]
+	at pe.com.bootcamp.data.ContributionData.GetContributionByAffiliateCode(ContributionData.java:28) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.getDataDemo(AffiliateData.java:152) ~[classes/:?]
+	at pe.com.bootcamp.data.AffiliateData.<init>(AffiliateData.java:30) ~[classes/:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[?:?]
+	at jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[?:?]
+	at jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[?:?]
+	at java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[?:?]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[?:?]
+	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.22.jar:5.3.22]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:656) ~[spring-beans-5.3.22.jar:5.3.22]
+	... 20 more
+
+2022-08-01 20:37:50.288  INFO 3408 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 3408 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:37:50.295  INFO 3408 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:37:51.018  INFO 3408 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:37:51.031  INFO 3408 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:37:51.031  INFO 3408 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:37:51.118  INFO 3408 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:37:51.118  INFO 3408 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 791 ms
+2022-08-01 20:37:51.402  INFO 3408 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 20:37:51.485  INFO 3408 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@6e5f5478, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@5fb07347, org.springframework.security.web.context.SecurityContextPersistenceFilter@2084e65a, org.springframework.security.web.header.HeaderWriterFilter@2b682e9, org.springframework.security.web.authentication.logout.LogoutFilter@7bec8cb0, pe.com.bootcamp.domain.JwtRequestFilter@1142d377, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@21527b8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@4586a8aa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@3ef2b8e5, org.springframework.security.web.session.SessionManagementFilter@8b670c0, org.springframework.security.web.access.ExceptionTranslationFilter@baa227e, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@4cfcac13]
+2022-08-01 20:37:51.643  INFO 3408 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 20:37:51.644  INFO 3408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 20:37:51.656  INFO 3408 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 20:37:51.673  INFO 3408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:37:51.759  INFO 3408 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:37:51.776  INFO 3408 --- [main] p.c.b.Application                        : Started Application in 1.808 seconds (JVM running for 2.531)
+2022-08-01 20:37:59.742  INFO 3408 --- [http-nio-8084-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 20:37:59.742  INFO 3408 --- [http-nio-8084-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 20:37:59.743  INFO 3408 --- [http-nio-8084-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 20:37:59.763  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:37:59.763  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:37:59.823  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 20:37:59.825  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 20:37:59.902  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 20:37:59.902  INFO 3408 --- [http-nio-8084-exec-2] p.c.b.d.AffiliateData                    : GetPersonByIdentNumber:Person [firstName=Luis Eduardo, lastName=Cochachi Chamorro, dateOfBirth=1993-05-03, maritalStatus=null, ubigeo=null, nationatity=null, affiliateCode=540551LCCHM2]
+2022-08-01 20:43:06.870  INFO 3408 --- [RMI TCP Connection(13)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-01 20:43:10.273  INFO 28896 --- [main] p.c.b.Application                        : Starting Application using Java 17.0.3 on LIM-27JK3M3 with PID 28896 (C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP\target\classes started by lcochach in C:\Users\lcochach\Documents\04 Solutions\JAVA\Workspaces\Level 1\ProyectoRetiroAFP)
+2022-08-01 20:43:10.279  INFO 28896 --- [main] p.c.b.Application                        : No active profile set, falling back to 1 default profile: "default"
+2022-08-01 20:43:11.020  INFO 28896 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat initialized with port(s): 8084 (http)
+2022-08-01 20:43:11.034  INFO 28896 --- [main] o.a.c.c.StandardService                  : Starting service [Tomcat]
+2022-08-01 20:43:11.035  INFO 28896 --- [main] o.a.c.c.StandardEngine                   : Starting Servlet engine: [Apache Tomcat/9.0.65]
+2022-08-01 20:43:11.116  INFO 28896 --- [main] o.a.c.c.C.[.[.[/]                        : Initializing Spring embedded WebApplicationContext
+2022-08-01 20:43:11.117  INFO 28896 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 807 ms
+2022-08-01 20:43:11.402  INFO 28896 --- [main] pertySourcedRequestMappingHandlerMapping : Mapped URL path [/v2/api-docs] onto method [springfox.documentation.swagger2.web.Swagger2Controller#getDocumentation(String, HttpServletRequest)]
+2022-08-01 20:43:11.481  INFO 28896 --- [main] o.s.s.w.DefaultSecurityFilterChain       : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@701d2b59, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@1999149e, org.springframework.security.web.context.SecurityContextPersistenceFilter@12365bd8, org.springframework.security.web.header.HeaderWriterFilter@21527b8, org.springframework.security.web.authentication.logout.LogoutFilter@ce561cc, pe.com.bootcamp.domain.JwtRequestFilter@11c78080, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@49cb5030, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@23afc725, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@65d73bd, org.springframework.security.web.session.SessionManagementFilter@26d40c77, org.springframework.security.web.access.ExceptionTranslationFilter@2084e65a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@7d284f15]
+2022-08-01 20:43:11.642  INFO 28896 --- [main] o.s.b.w.e.t.TomcatWebServer              : Tomcat started on port(s): 8084 (http) with context path ''
+2022-08-01 20:43:11.643  INFO 28896 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Context refreshed
+2022-08-01 20:43:11.656  INFO 28896 --- [main] d.s.w.p.DocumentationPluginsBootstrapper : Found 2 custom documentation plugin(s)
+2022-08-01 20:43:11.674  INFO 28896 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:43:11.758  INFO 28896 --- [main] s.d.s.w.s.ApiListingReferenceScanner     : Scanning for api listing references
+2022-08-01 20:43:11.778  INFO 28896 --- [main] p.c.b.Application                        : Started Application in 1.84 seconds (JVM running for 2.487)
+2022-08-01 20:43:18.230  INFO 28896 --- [http-nio-8084-exec-2] o.a.c.c.C.[.[.[/]                        : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-01 20:43:18.230  INFO 28896 --- [http-nio-8084-exec-2] o.s.w.s.DispatcherServlet                : Initializing Servlet 'dispatcherServlet'
+2022-08-01 20:43:18.231  INFO 28896 --- [http-nio-8084-exec-2] o.s.w.s.DispatcherServlet                : Completed initialization in 1 ms
+2022-08-01 20:43:18.244  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : getHeader Authorization:Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:43:18.245  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : jwtToken:eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJsY29jaGFjaGkiLCJpc0FkbWluIjp0cnVlLCJleHAiOjE2NTk0MTg0MTcsImlhdCI6MTY1OTQwMDQxN30.3OwbieHFZX2D0s6EvC1Yx3MYDX6EUHTgLgIRF3NBKCUzmNf0RxxqgkeP0f0Gz_uQx-X336xajyPqbxl7znocyg
+2022-08-01 20:43:18.290  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : username:lcochachi
+2022-08-01 20:43:18.292  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-01 20:43:18.351  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.AffiliateData                    : WithdrawalOfFundRequest:47720848
+2022-08-01 20:43:18.352  INFO 28896 --- [http-nio-8084-exec-2] p.c.b.d.AffiliateData                    : GetPersonByIdentNumber:Person [firstName=Luis Eduardo, lastName=Cochachi Chamorro, dateOfBirth=1993-05-03, maritalStatus=null, ubigeo=null, nationatity=null, affiliateCode=540551LCCHM2]

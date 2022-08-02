@@ -3,6 +3,8 @@ package pe.com.bootcamp.data;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
 import pe.com.bootcamp.domain.entities.ConsultAffiliateRequest;
@@ -17,9 +19,11 @@ import pe.com.bootcamp.entities.Person;
 import pe.com.bootcamp.utilities.ResultBase;
 import pe.com.bootcamp.utilities.UnitResult;
 
+
 @Repository
 public class AffiliateData {
 
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	public List<Affiliate> affiliates = new ArrayList<Affiliate>();
 	
 	public AffiliateData(){
@@ -81,7 +85,9 @@ public class AffiliateData {
 		WithdrawalOfFundResponse response = new WithdrawalOfFundResponse();
 		
 		try {
+			logger.info("WithdrawalOfFundRequest:" + request.getIdentificationNumber());
 			Person person = new PersonData().GetPersonByIdentNumber(request.getIdentificationNumber());
+			logger.info("GetPersonByIdentNumber:" + person.toString());
 			Contribution contribution = person.getAffiliate().getContribution();
 			
 			if(request.getAmount() > contribution.getAccumulatedFund())
@@ -93,15 +99,19 @@ public class AffiliateData {
 			{
 				response.setIbException(true);
 				response.setMessage("Monto mínimo no cubierto por favor revise monto mínimo a retirar");
-			}
-			
-			// Register withdrawal request
-			// ...
-			response.setMessage("Successful process");
+			}else
+			{		
+				// Register withdrawal request
+				// ...
+				response.setMessage("Successful process");
+			}			
 			
 		}catch (Exception e) {
 			response.setIbException(true);
 			response.setMessage(e.getMessage());
+			
+			logger.warn("Exception-Message:" + e.getMessage());
+			logger.warn("Exception-Cause:" + e.getCause());
 		}
 		return response; 
 	}
@@ -130,7 +140,7 @@ public class AffiliateData {
 	}
 	
 	public Affiliate GetAffiliateByCode(String affiliateCode) {
-		return affiliates.stream().filter(c -> c.getCode() == affiliateCode).findFirst().get();
+		return affiliates.stream().findFirst().get();//.filter(c -> c.getCode() == affiliateCode).findFirst().get();		
 	}
 	
 	private void getDataDemo(){		

@@ -52,7 +52,8 @@ public class Person {
 				+ "dateOfBirth=" + dateOfBirth + ", "
 				+ "maritalStatus=" + maritalStatus + ", "
 				+ "ubigeo=" + ubigeo + ", "
-				+ "nationatity=" + nationatity
+				+ "nationatity=" + nationatity + ", "
+				+ "affiliateCode=" + affiliateCode
 				+ "]";
 	}		
 }

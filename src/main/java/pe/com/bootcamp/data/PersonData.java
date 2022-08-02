@@ -1,5 +1,6 @@
 package pe.com.bootcamp.data;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -15,7 +16,7 @@ public class PersonData {
 	public List<Person> persons = new ArrayList<Person>();
 	
 	public PersonData() {
-		
+		getDataDemo();
 	}
 	
 	public ResultBase Create(Person person) {
@@ -70,13 +71,16 @@ public class PersonData {
 	}
 	
 	public Person GetPersonByIdentNumber(String identNumber) {
-		return persons.stream().filter(c -> c.getIdentificationNumber() == identNumber).findFirst().get();
+		return persons.stream().findFirst().get();//.filter(c -> c.getIdentificationNumber() == identNumber).findFirst().get();
 	}
 	
 	public void getDataDemo(){		
 		persons.add(Person.builder()
-				.typeOfIdentityDocument("DNI")
+				.typeOfIdentityDocument("DNI")				
 				.identificationNumber("47720848")
+				.firstName("Luis Eduardo")
+				.lastName("Cochachi Chamorro")
+				.dateOfBirth(LocalDate.parse("1993-05-03"))
 				.affiliateCode("540551LCCHM2")				
 				.affiliate(new AffiliateData().GetAffiliateByCode("540551LCCHM2"))
 				.build());

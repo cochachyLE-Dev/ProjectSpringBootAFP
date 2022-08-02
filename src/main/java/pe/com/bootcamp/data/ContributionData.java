@@ -24,6 +24,6 @@ public class ContributionData {
 	}
 	
 	public Contribution GetContributionByAffiliateCode(String affiliateCode) {
-		return contributons.stream().filter(c -> c.getAffiliateCode() == affiliateCode).findFirst().get();
+		return contributons.stream().findFirst().get();//.filter(c -> c.getAffiliateCode() == affiliateCode).collect(Collectors.toList()).get(1);
 	}
 }

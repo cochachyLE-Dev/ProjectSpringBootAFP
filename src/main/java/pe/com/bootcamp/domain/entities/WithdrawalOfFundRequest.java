@@ -7,11 +7,11 @@ import lombok.Setter;
 @Builder
 public class WithdrawalOfFundRequest {
 	@Getter @Setter
-	private String typeOfIdentityDocument;
+	public String typeOfIdentityDocument;
 	@Getter @Setter
-	private String identificationNumber;		
+	public String identificationNumber;		
 	@Getter @Setter
-	private Double amount;
+	public Double amount;
 	@Getter @Setter
-	private String typeOfAFP;
+	public String typeOfAFP;
 }

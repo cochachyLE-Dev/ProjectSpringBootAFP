@@ -15,7 +15,7 @@ import pe.com.bootcamp.domain.entities.WithdrawalOfFundResponse;
 
 @RestController
 @RequestMapping(path = "/affiliate")
-public class AffiliateController {
+public class AffiliateController {	
 	
 	@Autowired
 	public AffiliateData affiliateData;	
