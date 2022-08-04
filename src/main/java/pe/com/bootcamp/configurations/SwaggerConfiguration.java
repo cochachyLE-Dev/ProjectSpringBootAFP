@@ -17,7 +17,7 @@ import springfox.documentation.swagger2.annotations.EnableSwagger2;
 
 @EnableSwagger2
 @Configuration
-public class SwaggerConfig {
+public class SwaggerConfiguration {
 	
 	@Bean
 	public Docket swaggerPersonApi() {
@@ -39,6 +39,19 @@ public class SwaggerConfig {
                 .select()
 				.apis(RequestHandlerSelectors.basePackage("pe.com.bootcamp.controllers"))		        
 		        .paths(regex("/person.*"))
+		        .build()		        
+		        .enableUrlTemplating(true)
+		        .apiInfo(apiEndPointsInfo())
+		        .securitySchemes(Arrays.asList(apiKey()));
+    }	
+	
+	@Bean
+    public Docket swaggerContributionApi() {
+        return new Docket(DocumentationType.SWAGGER_2)
+                .groupName("Contribution")
+                .select()
+				.apis(RequestHandlerSelectors.basePackage("pe.com.bootcamp.controllers"))		        
+		        .paths(regex("/contribution.*"))
 		        .build()		        
 		        .enableUrlTemplating(true)
 		        .apiInfo(apiEndPointsInfo())

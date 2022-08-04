@@ -1,8 +1,10 @@
 package pe.com.bootcamp.utilities;
 
+import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
+@Builder
 public class ResultBase {	
 	
 	@Getter @Setter

@@ -1,10 +1,11 @@
 package pe.com.bootcamp.domain.entities;
 
 import lombok.Getter;
+import lombok.Setter;
 
 public class AuthenticationResponse {
 	
-	@Getter
+	@Getter @Setter
 	private String token;	
 	
 	public AuthenticationResponse() {

@@ -2,38 +2,48 @@ package pe.com.bootcamp.entities;
 
 import java.time.LocalDate;
 
-import lombok.AllArgsConstructor;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.IdClass;
+import javax.persistence.Table;
+
+import org.springframework.format.annotation.DateTimeFormat;
+
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@Builder
-@AllArgsConstructor
-public class Person {
+@Builder @Getter @Setter
+@Entity @Table(name = "Person")
+@IdClass(PersonPK.class)
+public class Person {					
+		
+	@Id
+//	@Column(nullable = false)
+	private String typeOfIdentityDocument;
+	@Id
+//	@Column(nullable = false)
+	private String identificationNumber;	
 	
-	@Getter @Setter
-	public String typeOfIdentityDocument;
-	@Getter @Setter
-	public String identificationNumber;
-	@Getter @Setter
-	public String firstName;
-	@Getter @Setter
-	public String lastName;
-	@Getter @Setter
-	public LocalDate dateOfBirth;
-	@Getter @Setter
-	public String maritalStatus;
-	@Getter @Setter
-	public String ubigeo;
-	@Getter @Setter
-	public String nationatity;
-	@Getter @Setter
-	public String affiliateCode;
-	@Getter @Setter
-	public Affiliate affiliate;
+	@Column
+	private String firstName;
+	@Column
+	private String lastName;
+	@Column
+	@DateTimeFormat(pattern = "yyyy.MM.dd HH:mm:ss")
+	private LocalDate dateOfBirth;
+	@Column
+	private String maritalStatus;
+	@Column
+	private String ubigeo;
+	@Column
+	private String nationatity;			
 	
-	public Person(String typeOfIdentityDocument, String identificationNumber,String firstName, String lastName, LocalDate dateOfBirth, String maritalStatus, String ubigeo,
-			String nationatity) {
+	public Person() {}	
+	
+	public Person(String typeOfIdentityDocument, String identificationNumber, String firstName, String lastName,
+			LocalDate dateOfBirth, String maritalStatus, String ubigeo, String nationatity) {
 		this.typeOfIdentityDocument = typeOfIdentityDocument;
 		this.identificationNumber = identificationNumber;
 		this.firstName = firstName;
@@ -41,19 +51,22 @@ public class Person {
 		this.dateOfBirth = dateOfBirth;
 		this.maritalStatus = maritalStatus;
 		this.ubigeo = ubigeo;
-		this.nationatity = nationatity;
+		this.nationatity = nationatity;		
 	}
-
+	
+	
+	
 	@Override
 	public String toString() {
 		return "Person ["
+				+ "typeOfIdentityDocument=" + typeOfIdentityDocument +", "
+				+ "identificationNumber=" + identificationNumber +", "
 				+ "firstName=" + firstName +", "
 				+ "lastName=" + lastName + ", "
 				+ "dateOfBirth=" + dateOfBirth + ", "
 				+ "maritalStatus=" + maritalStatus + ", "
 				+ "ubigeo=" + ubigeo + ", "
-				+ "nationatity=" + nationatity + ", "
-				+ "affiliateCode=" + affiliateCode
+				+ "nationatity=" + nationatity				
 				+ "]";
-	}		
+	}	
 }

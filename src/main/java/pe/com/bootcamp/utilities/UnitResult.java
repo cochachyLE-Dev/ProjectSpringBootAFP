@@ -1,7 +1,6 @@
 package pe.com.bootcamp.utilities;
 
 import java.util.ArrayList;
-import java.util.List;
 
 import org.springframework.lang.Nullable;
 import com.fasterxml.jackson.annotation.JsonInclude;
@@ -14,7 +13,7 @@ public class UnitResult<T> extends ResultBase {
 	@Getter @Setter @JsonInclude(JsonInclude.Include.NON_NULL)
 	private T value;
 	@Getter @Setter @JsonInclude(JsonInclude.Include.NON_NULL)
-	private List<T> list;
+	private ArrayList<T> list;
 	
 	public UnitResult() {}
 	

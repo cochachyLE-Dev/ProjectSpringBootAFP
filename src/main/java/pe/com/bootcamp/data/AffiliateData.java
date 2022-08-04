@@ -7,6 +7,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Repository;
 
+import pe.com.bootcamp.data.interfaces.IAffiliateData;
 import pe.com.bootcamp.domain.entities.ConsultAffiliateRequest;
 import pe.com.bootcamp.domain.entities.ConsultAffiliateResponse;
 import pe.com.bootcamp.domain.entities.ConsultContributionsRequest;
@@ -19,9 +20,8 @@ import pe.com.bootcamp.entities.Person;
 import pe.com.bootcamp.utilities.ResultBase;
 import pe.com.bootcamp.utilities.UnitResult;
 
-
 @Repository
-public class AffiliateData {
+public class AffiliateData implements IAffiliateData {
 
 	private final Logger logger = LoggerFactory.getLogger(this.getClass());
 	public List<Affiliate> affiliates = new ArrayList<Affiliate>();
@@ -29,52 +29,61 @@ public class AffiliateData {
 	public AffiliateData(){
 		getDataDemo();
 	}
-	
-	public ResultBase Create(Affiliate affiliate) {
+	@Override
+	public ResultBase create(Affiliate affiliate) {
 		ResultBase result = new ResultBase();
 		try {
 			
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			result.setIbException(true);
 			result.setMessage(e.getMessage());
 		}
 		return result;
 	}
-	public UnitResult<Affiliate> FindAll() {
+	@Override
+	public UnitResult<Affiliate> findAll() {
 		UnitResult<Affiliate> result = new UnitResult<Affiliate>();
 		try {
 			
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			result.setIbException(true);
 			result.setMessage(e.getMessage());
 		}
 		return result;
 	}
-	public UnitResult<Affiliate> findByIdentNumber(String identNumber) {
+	@Override
+	public UnitResult<Affiliate> findByCode(String identNumber) {
 		UnitResult<Affiliate> result = new UnitResult<Affiliate>();
 		try {
 			
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			result.setIbException(true);
 			result.setMessage(e.getMessage());
 		}
 		return result;
 	}
-	public UnitResult<Affiliate> Update(Affiliate affiliate) {
+	@Override
+	public UnitResult<Affiliate> update(Affiliate affiliate) {
 		UnitResult<Affiliate> result = new UnitResult<Affiliate>();
 		try {
 			
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			result.setIbException(true);
 			result.setMessage(e.getMessage());
 		}
 		return result;
 	}
-	public ResultBase Delete(String numIdent) {
+	@Override
+	public ResultBase deleteByCode(String identNumber) {
 		ResultBase result = new ResultBase();
 		try {
 			
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			result.setIbException(true);
 			result.setMessage(e.getMessage());
 		}
@@ -86,9 +95,9 @@ public class AffiliateData {
 		
 		try {
 			logger.info("WithdrawalOfFundRequest:" + request.getIdentificationNumber());
-			Person person = new PersonData().GetPersonByIdentNumber(request.getIdentificationNumber());
+			Person person = new Person();//new PersonData().GetPersonByIdentNumber(request.getIdentificationNumber());
 			logger.info("GetPersonByIdentNumber:" + person.toString());
-			Contribution contribution = person.getAffiliate().getContribution();
+			Contribution contribution = new Contribution(); //person.getAffiliate().getContribution();
 			
 			if(request.getAmount() > contribution.getAccumulatedFund())
 			{
@@ -133,6 +142,7 @@ public class AffiliateData {
 			Contribution contributionData = new ContributionData().GetContributionByAffiliateCode(request.getAffiliateCode());
 			response.setValue(contributionData);
 		}catch (Exception e) {
+			logger.error(e.getMessage());
 			response.setIbException(true);
 			response.setMessage(e.getMessage());
 		}
@@ -144,13 +154,13 @@ public class AffiliateData {
 	}
 	
 	private void getDataDemo(){		
-		affiliates.add(Affiliate.builder()
-				.code("540551LCCHM2")
-				.origen("HABITAT")
-				.typeOfWorker("Dependent")
-				.currentAFP("HABITAT")
-				.status("Active")
-				.contribution(new ContributionData().GetContributionByAffiliateCode("540551LCCHM2"))
-				.build());
+//		affiliates.add(Affiliate.builder()
+//				.code("540551LCCHM2")
+//				.origen("HABITAT")
+//				.typeOfWorker("Dependent")
+//				.currentAFP("HABITAT")
+//				.status("Active")
+//				.contribution(new ContributionData().GetContributionByAffiliateCode("540551LCCHM2"))
+//				.build());
 	}
 }

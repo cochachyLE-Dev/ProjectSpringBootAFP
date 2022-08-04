@@ -17,8 +17,6 @@ import org.springframework.stereotype.Component;
 import org.springframework.util.StringUtils;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import io.jsonwebtoken.ExpiredJwtException;
-
 @Component
 public class JwtRequestFilter extends OncePerRequestFilter {
 	
@@ -33,39 +31,26 @@ public class JwtRequestFilter extends OncePerRequestFilter {
 		
 		String username = null;
 		String jwtToken = null;
-		
-		logger.info("getHeader Authorization:" + requestTokenHeader);
 				
 		if(requestTokenHeader != null && requestTokenHeader.startsWith("Bearer ")) {
 			
-			jwtToken = requestTokenHeader.substring(7);
-			
-			logger.info("jwtToken:" + jwtToken);
-			
-			try {
-				username = this.jwtToken.getUsernameFromToken(jwtToken);
-				logger.info("username:" + username);
-			} catch(IllegalArgumentException e) {
-				System.out.println("Unable to get JWT Token");
-			} catch(ExpiredJwtException e) {
-				System.out.println("JWT Token has expired");
-			}			
-		}else {
-			logger.warn("JWT Token does not begin with Bearer String");
-		}
-				
-		if(username != null && SecurityContextHolder.getContext().getAuthentication() == null) 
-		{						
-			if(StringUtils.hasText(jwtToken) && this.jwtToken.validateToken(jwtToken)) 
-			{			
-				logger.info("validateToken: pased");
-				
-				UserDetails userDetails = new User(this.jwtToken.getUsernameFromToken(jwtToken), "", this.jwtToken.getRolesFromToken(jwtToken));						
-				UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());				
-				usernamePasswordAuthenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));						
-				SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+			jwtToken = requestTokenHeader.substring(7);					
+			username = this.jwtToken.getUsernameFromToken(jwtToken);
+						
+			if(username != null && SecurityContextHolder.getContext().getAuthentication() == null) 
+			{						
+				if(StringUtils.hasText(jwtToken) && this.jwtToken.validateToken(jwtToken)) 
+				{			
+					logger.info("validateToken: pased");
+					
+					UserDetails userDetails = new User(this.jwtToken.getUsernameFromToken(jwtToken), "", this.jwtToken.getRolesFromToken(jwtToken));						
+					UsernamePasswordAuthenticationToken usernamePasswordAuthenticationToken = new UsernamePasswordAuthenticationToken(userDetails, null, userDetails.getAuthorities());				
+					usernamePasswordAuthenticationToken.setDetails(new WebAuthenticationDetailsSource().buildDetails(request));						
+					SecurityContextHolder.getContext().setAuthentication(usernamePasswordAuthenticationToken);
+				}
 			}
 		}
+				
 		filterChain.doFilter(request, response);
 	}		
 }

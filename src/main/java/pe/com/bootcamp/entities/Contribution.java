@@ -1,19 +1,28 @@
 package pe.com.bootcamp.entities;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@Builder
+@Builder @AllArgsConstructor @Getter @Setter
+@Entity @Table
 public class Contribution {
-	@Getter @Setter
-	public String affiliateCode;
-	@Getter @Setter
-	public Double cumulativeContributions;
-	@Getter @Setter
-	public Double withdrawalsAndAccruedFees;
-	@Getter @Setter
-	public Double accumulatedProfitability;
-	@Getter @Setter
-	public Double accumulatedFund;	
+	@Id	
+	private String affiliateCode;
+	@Column
+	private Double cumulativeContributions;
+	@Column
+	private Double withdrawalsAndAccruedFees;
+	@Column
+	private Double accumulatedProfitability;
+	@Column
+	private Double accumulatedFund;	
+	
+	public Contribution() {}
 }

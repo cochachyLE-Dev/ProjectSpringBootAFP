@@ -2,42 +2,59 @@ package pe.com.bootcamp.entities;
 
 import java.time.LocalDate;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
+import javax.persistence.Table;
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
 
-@AllArgsConstructor
-@Builder
+@Builder @AllArgsConstructor @Getter @Setter
+@Entity @Table
 public class Affiliate {
-		
-	@Getter @Setter
-	public String code;
-	@Getter @Setter
+	@Id	
+	public String code;	
+	@Column
+	private String typeOfIdentityDocument;	
+	@Column
+	private String identificationNumber;	
+	@Column
 	public String origen;
-	@Getter @Setter
+	@Column
 	public String typeCommission;
-	@Getter @Setter
+	@Column
 	public String currentAFP;
-	@Getter @Setter
+	@Column
 	public LocalDate dateOfLastContribution;
-	@Getter @Setter
+	@Column
 	public LocalDate dateOfConsultation;
-	@Getter @Setter
+	@Column
 	public LocalDate dateOfEntryToTheSPP;
-	@Getter @Setter
+	@Column
 	public String typeOfWorker; // Dependent / Independent
-	@Getter @Setter
+	@Column
 	public String status;
-	@Getter @Setter
+	@Column
 	public LocalDate dateOfAffiliationToCurrentAFP;
-	@Getter @Setter
-	public Contribution contribution;
 	
-	public Affiliate(String code, String origen, String typeCommission, String currentAFP,
-			LocalDate dateOfLastContribution, LocalDate dateOfConsultation, LocalDate dateOfEntryToTheSPP,
-			String typeOfWorker, String status, LocalDate dateOfAffiliationToCurrentAFP) {
+	@OneToOne
+	@JoinColumn(name = "code")
+	public Contribution contribution;	
+
+	public Affiliate() {}
+	
+	public Affiliate(String code, String typeOfIdentityDocument, String identificationNumber, String origen,
+			String typeCommission, String currentAFP, LocalDate dateOfLastContribution, LocalDate dateOfConsultation,
+			LocalDate dateOfEntryToTheSPP, String typeOfWorker, String status,
+			LocalDate dateOfAffiliationToCurrentAFP) {
 		this.code = code;
+		this.typeOfIdentityDocument = typeOfIdentityDocument;
+		this.identificationNumber = identificationNumber;
 		this.origen = origen;
 		this.typeCommission = typeCommission;
 		this.currentAFP = currentAFP;
@@ -48,7 +65,7 @@ public class Affiliate {
 		this.status = status;
 		this.dateOfAffiliationToCurrentAFP = dateOfAffiliationToCurrentAFP;
 	}
-
+	
 	@Override
 	public String toString() {
 		return "Affiliate ["
@@ -64,6 +81,4 @@ public class Affiliate {
 				+ "dateOfAffiliationToCurrentAFP=" + dateOfAffiliationToCurrentAFP
 				+ "]";
 	}
-
-
 }

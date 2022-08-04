@@ -61,16 +61,7 @@ private final Logger logger = LoggerFactory.getLogger(this.getClass());
 		}catch(BadCredentialsException e) {
 			throw new Exception("INVALID_CREDENTIALS",e);
 		}
-	}
-	
-	@RequestMapping(value = "/register", method = RequestMethod.POST)
-	public ResponseEntity<?> saveUser(@RequestBody AuthenticationRequest authenticationRequest) throws Exception {
-		
-		final String encodePassword = userDetailsService.encodePassword(authenticationRequest.getPassword());
-		authenticationRequest.setPassword(encodePassword);
-		
-		return ResponseEntity.ok(authenticationRequest);
-	}
+	}		
 	
 	@RequestMapping(value = "/refreshtoken", method = RequestMethod.GET)
 	public ResponseEntity<?> refreshtoken(@RequestHeader("Authorization") String authorization) throws Exception {

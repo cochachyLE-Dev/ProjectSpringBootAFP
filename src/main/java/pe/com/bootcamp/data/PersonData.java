@@ -4,71 +4,33 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-import org.springframework.stereotype.Repository;
+import javax.persistence.EntityManager;
+import javax.persistence.PersistenceContext;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
+import lombok.AllArgsConstructor;
+import pe.com.bootcamp.data.interfaces.IPersonData;
+import pe.com.bootcamp.data.repositories.IPersonRepository;
 import pe.com.bootcamp.entities.Person;
 import pe.com.bootcamp.utilities.ResultBase;
 import pe.com.bootcamp.utilities.UnitResult;
 
-@Repository
-public class PersonData {
+@AllArgsConstructor
+@Service
+public class PersonData implements IPersonData {
 
-	public List<Person> persons = new ArrayList<Person>();
+	@PersistenceContext
+    EntityManager entityManager;
 	
-	public PersonData() {
-		getDataDemo();
-	}
-	
-	public ResultBase Create(Person person) {
-		ResultBase result = new ResultBase();
-		try {
-			
-		}catch (Exception e) {
-			result.setIbException(true);
-			result.setMessage(e.getMessage());
-		}
-		return result;
-	}
-	public UnitResult<Person> FindAll() {
-		UnitResult<Person> result = new UnitResult<Person>();
-		try {
-			
-		}catch (Exception e) {
-			result.setIbException(true);
-			result.setMessage(e.getMessage());
-		}
-		return result;
-	}
-	public UnitResult<Person> FindId(String numIdent) {
-		UnitResult<Person> result = new UnitResult<Person>();
-		try {
-			
-		}catch (Exception e) {
-			result.setIbException(true);
-			result.setMessage(e.getMessage());
-		}
-		return result;
-	}
-	public UnitResult<Person> Update(Person person) {
-		UnitResult<Person> result = new UnitResult<Person>();
-		try {
-			
-		}catch (Exception e) {
-			result.setIbException(true);
-			result.setMessage(e.getMessage());
-		}
-		return result;
-	}
-	public ResultBase Delete(String numIdent) {
-		ResultBase result = new ResultBase();
-		try {
-			
-		}catch (Exception e) {
-			result.setIbException(true);
-			result.setMessage(e.getMessage());
-		}
-		return result;
-	}
+	@Autowired
+	private IPersonRepository personRepository;
+	private final Logger logger = LoggerFactory.getLogger(this.getClass());
+	public List<Person> persons = new ArrayList<Person>();			
 	
 	public Person GetPersonByIdentNumber(String identNumber) {
 		return persons.stream().findFirst().get();//.filter(c -> c.getIdentificationNumber() == identNumber).findFirst().get();
@@ -81,8 +43,115 @@ public class PersonData {
 				.firstName("Luis Eduardo")
 				.lastName("Cochachi Chamorro")
 				.dateOfBirth(LocalDate.parse("1993-05-03"))
-				.affiliateCode("540551LCCHM2")				
-				.affiliate(new AffiliateData().GetAffiliateByCode("540551LCCHM2"))
+				//.affiliateCode("540551LCCHM2")				
+				//.affiliate(new AffiliateData().GetAffiliateByCode("540551LCCHM2"))
 				.build());
+	}
+
+	@Override
+	@Transactional
+	public ResultBase create(Person person) {
+		ResultBase result = new ResultBase();
+		try {
+			logger.info("Creating person:" + person.toString());
+			
+			if(ExistsPerson(person.getTypeOfIdentityDocument(), person.getIdentificationNumber()))
+			{			
+				String query = "Insert into Person(typeOfIdentityDocument,identificationNumber,firstName,lastName) values (:typeOfIdentityDocument,:identificationNumber,:firstName,:lastName)";
+				
+				entityManager.createNativeQuery(query)
+				.setParameter("typeOfIdentityDocument", person.getTypeOfIdentityDocument())
+				.setParameter("identificationNumber", person.getIdentificationNumber())
+				.setParameter("firstName", person.getFirstName())
+				.setParameter("lastName", person.getLastName())
+				.executeUpdate();					
+				
+				logger.info("Created person successful");
+			}
+			else
+			{
+				result.setIbException(true);
+				result.setMessage("Person exists!");
+			}
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			result.setIbException(true);
+			result.setMessage(e.getMessage());
+		}
+		return result;
+	}
+
+	@Override
+	public UnitResult<Person> findAll() {
+		UnitResult<Person> result = new UnitResult<Person>();
+		try {
+			result.setList(new ArrayList<Person>(personRepository.findAll()));
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			result.setIbException(true);
+			result.setMessage(e.getMessage());
+		}
+		return result;
+	}
+
+	@Override
+	public UnitResult<Person> findByIdentNumber(String identNumber) {
+		UnitResult<Person> result = new UnitResult<Person>();
+		try {
+			
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			result.setIbException(true);
+			result.setMessage(e.getMessage());
+		}
+		return result;
+	}
+
+	@Override
+	public UnitResult<Person> update(Person person) {
+		UnitResult<Person> result = new UnitResult<Person>();
+		try {
+			personRepository.save(person);
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			result.setIbException(true);
+			result.setMessage(e.getMessage());
+		}
+		return result;
+	}
+
+	@Override
+	public ResultBase deleteByIdentNumber(String identNumber) {
+		ResultBase result = new ResultBase();
+		try {
+			
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			result.setIbException(true);
+			result.setMessage(e.getMessage());
+		}
+		return result;
+	}
+	
+	@Transactional
+	public boolean ExistsPerson(String typeOfIdentityDocument ,String identificationNumber) {
+		try
+		{
+			String query = "SELECT typeOfIdentityDocument,identificationNumber,firstName,lastName FROM Person where typeOfIdentityDocument = :typeOfIdentityDocument and identificationNumber = :identificationNumber";
+			List<?> persons = entityManager.createNativeQuery(query)
+					.setParameter("typeOfIdentityDocument", typeOfIdentityDocument)
+					.setParameter("identificationNumber", identificationNumber)
+					.getResultList();
+			
+			if(!persons.isEmpty() && persons.size() > 0)
+			{
+				logger.error("Person Exists:"+persons.get(0).toString());
+			}
+			
+			return !persons.isEmpty() && persons.size() > 0;
+		}catch (Exception e) {
+			logger.error(e.getMessage());
+			return false;
+		}
 	}
 }
