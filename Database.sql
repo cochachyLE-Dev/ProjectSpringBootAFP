@@ -1,20 +1,20 @@
-create table Person(
-    typeOfIdentityDocument varchar(5) null,
-	identificationNumber varchar(8) null,    
-	firstName varchar(125),
-	lastName varchar(125),
-	dateOfBirth Date,
-	maritalStatus varchar(30),
-	ubigeo varchar(15),
-	nationatity varchar(15)	
-	-- affiliateCode varchar(15)
+create table if not exists public.person
+(
+    type_of_identity_document varchar(5) NOT NULL,
+    identification_number varchar(8) NOT NULL,    
+    date_of_birth date,
+    first_name varchar(125),
+    last_name varchar(125),
+    marital_status varchar(30),
+    nationatity varchar(15),
+    ubigeo varchar(15)    
 );
 
 alter table Person
-add constraint pkPerson primary key(typeOfIdentityDocument,identificationNumber);
+add constraint person_pkey primary key(identification_number, type_of_identity_document);
 
 create table Affiliate(
-    typeOfIdentityDocument varchar(2) not null,
+    typeOfIdentityDocument varchar(5) not null,
 	identificationNumber varchar(8) not null,     
     code varchar(15) not null,	    
 	origen varchar(30),
@@ -55,5 +55,6 @@ alter table Affiliate
 drop constraint fkAffiliateContribution;
 
 select * from Person;
+truncate Person;
 select * from Affiliate;
 select * from Contribution;

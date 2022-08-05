@@ -5,3 +5,7 @@
 ![img](https://github.com/cochachyLE-Dev/ProjectSpringBootAFP/blob/main/Swagger-person-controller.PNG)
 
 ![img](https://github.com/cochachyLE-Dev/ProjectSpringBootAFP/blob/main/PostgreSQL-database.PNG)
+
+![img](https://github.com/cochachyLE-Dev/ProjectSpringBootAFP/blob/main/Postman-person-controller.PNG)
+
+![img](https://github.com/cochachyLE-Dev/ProjectSpringBootAFP/blob/main/Project-SpringBoot.PNG)

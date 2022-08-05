@@ -55,9 +55,9 @@ public class PersonData implements IPersonData {
 		try {
 			logger.info("Creating person:" + person.toString());
 			
-			if(ExistsPerson(person.getTypeOfIdentityDocument(), person.getIdentificationNumber()))
+			if(!ExistsPerson(person.getTypeOfIdentityDocument(), person.getIdentificationNumber()))
 			{			
-				String query = "Insert into Person(typeOfIdentityDocument,identificationNumber,firstName,lastName) values (:typeOfIdentityDocument,:identificationNumber,:firstName,:lastName)";
+				String query = "Insert into Person(type_of_identity_document,identification_number,first_name,last_name) values (:typeOfIdentityDocument,:identificationNumber,:firstName,:lastName)";
 				
 				entityManager.createNativeQuery(query)
 				.setParameter("typeOfIdentityDocument", person.getTypeOfIdentityDocument())
@@ -66,7 +66,8 @@ public class PersonData implements IPersonData {
 				.setParameter("lastName", person.getLastName())
 				.executeUpdate();					
 				
-				logger.info("Created person successful");
+				result.setMessage("Created person successful");
+				logger.info(result.getMessage());
 			}
 			else
 			{
@@ -137,7 +138,7 @@ public class PersonData implements IPersonData {
 	public boolean ExistsPerson(String typeOfIdentityDocument ,String identificationNumber) {
 		try
 		{
-			String query = "SELECT typeOfIdentityDocument,identificationNumber,firstName,lastName FROM Person where typeOfIdentityDocument = :typeOfIdentityDocument and identificationNumber = :identificationNumber";
+			String query = "SELECT type_of_identity_document,identification_number,first_name,last_name FROM Person where type_of_identity_document = :typeOfIdentityDocument and identification_number = :identificationNumber";
 			List<?> persons = entityManager.createNativeQuery(query)
 					.setParameter("typeOfIdentityDocument", typeOfIdentityDocument)
 					.setParameter("identificationNumber", identificationNumber)

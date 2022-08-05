@@ -20,24 +20,24 @@ import lombok.Setter;
 public class Person {					
 		
 	@Id
-//	@Column(nullable = false)
+	//@Column(name = "type_of_identity_document", nullable = false)
 	private String typeOfIdentityDocument;
 	@Id
-//	@Column(nullable = false)
+	//@Column(name = "identification_number", nullable = false)
 	private String identificationNumber;	
 	
-	@Column
+	@Column(name = "first_name")
 	private String firstName;
-	@Column
+	@Column(name = "last_name")
 	private String lastName;
-	@Column
+	@Column(name = "date_of_birth")
 	@DateTimeFormat(pattern = "yyyy.MM.dd HH:mm:ss")
 	private LocalDate dateOfBirth;
-	@Column
+	@Column(name = "marital_status")
 	private String maritalStatus;
-	@Column
+	@Column(name = "ubigeo")
 	private String ubigeo;
-	@Column
+	@Column(name = "nationatity")
 	private String nationatity;			
 	
 	public Person() {}	

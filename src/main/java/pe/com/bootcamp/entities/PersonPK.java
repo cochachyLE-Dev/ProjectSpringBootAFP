@@ -3,6 +3,7 @@ package pe.com.bootcamp.entities;
 import java.io.Serializable;
 import java.util.Objects;
 
+import javax.persistence.Column;
 import javax.persistence.Embeddable;
 
 import lombok.Getter;
@@ -12,7 +13,10 @@ import lombok.Setter;
 @Getter @Setter
 public class PersonPK implements Serializable {		
 	private static final long serialVersionUID = 1L;
+	
+	@Column(name = "type_of_identity_document", nullable = false)
 	private String typeOfIdentityDocument;	
+	@Column(name = "identification_number", nullable = false)
 	private String identificationNumber;
 	
 	public PersonPK() {}
