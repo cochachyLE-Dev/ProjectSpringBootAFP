@@ -23211,3 +23211,6 @@ org.springframework.transaction.UnexpectedRollbackException: Transaction silentl
 2022-08-04 19:16:36.857  INFO 34856 --- [http-nio-8084-exec-4] p.c.b.d.JwtRequestFilter                 : validateToken: pased
 2022-08-04 19:16:36.861  INFO 34856 --- [http-nio-8084-exec-4] p.c.b.d.PersonData                       : Creating person:Person [typeOfIdentityDocument=DNI, identificationNumber=47720847, firstName=Luis Eduardo, lastName=Cochachi Chamorro, dateOfBirth=2022-08-04, maritalStatus=Soltero, ubigeo=123456, nationatity=PERU]
 2022-08-04 19:16:36.864  INFO 34856 --- [http-nio-8084-exec-4] p.c.b.d.PersonData                       : Created person successful
+2022-08-04 19:21:06.899  INFO 34856 --- [http-nio-8084-exec-7] p.c.b.d.JwtRequestFilter                 : validateToken: pased
+2022-08-04 19:21:06.902  INFO 34856 --- [http-nio-8084-exec-7] p.c.b.d.PersonData                       : Creating person:Person [typeOfIdentityDocument=DNI, identificationNumber=47720847, firstName=Luis Eduardo, lastName=Cochachi Chamorro, dateOfBirth=2022-08-04, maritalStatus=Soltero, ubigeo=123456, nationatity=PERU]
+2022-08-04 19:21:06.906 ERROR 34856 --- [http-nio-8084-exec-7] p.c.b.d.PersonData                       : Person Exists:[Ljava.lang.Object;@e6810e5
