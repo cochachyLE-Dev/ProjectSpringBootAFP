@@ -7,7 +7,7 @@ import pe.com.bootcamp.utilities.UnitResult;
 public interface IPersonData {
 	public ResultBase create(Person person);
 	public UnitResult<Person> findAll();
-	public UnitResult<Person> findByIdentNumber(String identNumber);	
+	public UnitResult<Person> findByIdentNumber(String typeOfIdentityDocument, String identificationNumber);	
 	public UnitResult<Person> update(Person person);
-	public ResultBase deleteByIdentNumber(String identNumber);
+	public ResultBase deleteByIdentNumber(String typeOfIdentityDocument, String identificationNumber);
 }

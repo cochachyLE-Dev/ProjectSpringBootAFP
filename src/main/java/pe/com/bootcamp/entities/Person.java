@@ -69,4 +69,8 @@ public class Person {
 				+ "nationatity=" + nationatity				
 				+ "]";
 	}	
+	
+	public Person copy() throws CloneNotSupportedException {
+		return (Person) super.clone();
+	}	
 }

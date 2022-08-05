@@ -1,13 +1,12 @@
 package pe.com.bootcamp.controllers;
 
-import java.util.HashMap;
 import java.util.Map;
-import java.util.Map.Entry;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.access.annotation.Secured;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.authentication.DisabledException;
@@ -21,6 +20,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import io.jsonwebtoken.Claims;
+import pe.com.bootcamp.constants.AuthorityType;
 import pe.com.bootcamp.domain.JwtToken;
 import pe.com.bootcamp.domain.entities.AuthenticationRequest;
 import pe.com.bootcamp.domain.entities.AuthenticationResponse;
@@ -63,6 +63,7 @@ private final Logger logger = LoggerFactory.getLogger(this.getClass());
 		}
 	}		
 	
+	@Secured({AuthorityType.USER, AuthorityType.ADMIN})
 	@RequestMapping(value = "/refreshtoken", method = RequestMethod.GET)
 	public ResponseEntity<?> refreshtoken(@RequestHeader("Authorization") String authorization) throws Exception {
 		String requestTokenHeader = authorization;			
@@ -73,7 +74,7 @@ private final Logger logger = LoggerFactory.getLogger(this.getClass());
 			String jwtTokenOld = requestTokenHeader.substring(7);									
 			Claims claims = jwtToken.getAllClaimsFromToken(jwtTokenOld);		
 			
-			Map<String, Object> expectedMap = getMapFromIoJsonwebtokenClaims(claims);
+			Map<String, Object> expectedMap = jwtToken.getMapFromIoJsonwebtokenClaims(claims);
 			String token = jwtToken.doGenerateRefreshToken(expectedMap, expectedMap.get("sub").toString());
 			return ResponseEntity.ok(new AuthenticationResponse(token));
 		} 
@@ -81,13 +82,5 @@ private final Logger logger = LoggerFactory.getLogger(this.getClass());
 		{
 			throw new Exception("INVALID_TOKEN");
 		}
-	}
-
-	public Map<String, Object> getMapFromIoJsonwebtokenClaims(Claims claims) {
-		Map<String, Object> expectedMap = new HashMap<String, Object>();
-		for (Entry<String, Object> entry : claims.entrySet()) {
-			expectedMap.put(entry.getKey(), entry.getValue());
-		}
-		return expectedMap;
-	}
+	}	
 }

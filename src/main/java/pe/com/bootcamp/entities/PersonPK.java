@@ -23,7 +23,7 @@ public class PersonPK implements Serializable {
 	public PersonPK(String typeOfIdentityDocument, String identificationNumber) {
 		this.typeOfIdentityDocument = typeOfIdentityDocument;
 		this.identificationNumber = identificationNumber;
-	}		
+	}
 	
 	@Override
 	public boolean equals(Object o) {

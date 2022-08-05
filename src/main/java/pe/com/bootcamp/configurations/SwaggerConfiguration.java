@@ -22,7 +22,7 @@ public class SwaggerConfiguration {
 	@Bean
 	public Docket swaggerPersonApi() {
 		return new Docket(DocumentationType.SWAGGER_2)
-				.groupName("Affiliate")
+				.groupName("Person")
 				.select()
 				.apis(RequestHandlerSelectors.basePackage("pe.com.bootcamp.controllers"))
 		        .paths(regex("/affiliate.*"))		        
@@ -35,7 +35,7 @@ public class SwaggerConfiguration {
 	@Bean
     public Docket swaggerAffiliateApi() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("Person")
+                .groupName("Affiliate")
                 .select()
 				.apis(RequestHandlerSelectors.basePackage("pe.com.bootcamp.controllers"))		        
 		        .paths(regex("/person.*"))

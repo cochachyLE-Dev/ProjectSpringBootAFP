@@ -1,11 +1,12 @@
 package pe.com.bootcamp.domain;
 
-import java.util.Arrays;
 import java.util.Collection;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.function.Function;
 
 import org.springframework.beans.factory.annotation.Value;
@@ -22,9 +23,12 @@ import io.jsonwebtoken.MalformedJwtException;
 import io.jsonwebtoken.SignatureAlgorithm;
 import io.jsonwebtoken.SignatureException;
 import io.jsonwebtoken.UnsupportedJwtException;
+import pe.com.bootcamp.constants.AuthorityIdentityType;
+import pe.com.bootcamp.constants.AuthorityType;
 
 @Component
 public class JwtToken{	 	
+		
 	private String secret;
 	private int jwtExpirationInMs;
 	private int refreshExpirationDateInMs;
@@ -44,12 +48,12 @@ public class JwtToken{
 		this.refreshExpirationDateInMs = refreshExpirationDateInMs;
 	}
 	
-	// Retrieve username from jwt token
+	// Retrieve username from JWToken
 	public String getUsernameFromToken(String token) {
 		return getClaimFromToken(token, Claims::getSubject);
 	}
 	
-	// Retrieve expiration date from jwt token
+	// Retrieve expiration date from JWToken
 	public Date getExpirationDateFromToken(String token) {
 		return getClaimFromToken(token, Claims::getExpiration);
 	}
@@ -81,10 +85,10 @@ public class JwtToken{
 		
 		Collection<? extends GrantedAuthority> roles = userDetails.getAuthorities();
 		
-		if(roles.contains(new SimpleGrantedAuthority("ROLE_ADMIN")))
-			claims.put("isAdmin", true);
-		if(roles.contains(new SimpleGrantedAuthority("ROLE_USER")))
-			claims.put("isUser", true);		
+		if(roles.contains(new SimpleGrantedAuthority(AuthorityType.ADMIN)))
+			claims.put(AuthorityIdentityType.ADMIN, true);
+		if(roles.contains(new SimpleGrantedAuthority(AuthorityType.USER)))
+			claims.put(AuthorityIdentityType.USER, true);		
 		
 		return doGenerateToken(claims, userDetails.getUsername());
 	}
@@ -128,25 +132,27 @@ public class JwtToken{
 		final String username = getUsernameFromToken(token);
 					
 		return (username.equals(userDetails.getUsername()) && !isTokenExpired(token));
-	}
-	
+	}	
 	public List<SimpleGrantedAuthority> getRolesFromToken(String token) {
 				
 		Claims claims = Jwts.parser().setSigningKey(secret).parseClaimsJws(token).getBody();										
-		List<SimpleGrantedAuthority> roles = null;
-
-		Boolean isAdmin = claims.get("isAdmin", Boolean.class);
-		Boolean isUser = claims.get("isUser", Boolean.class);
-
-		if (isAdmin != null && isAdmin) {
-			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
-		}
-
-		if (isUser != null && isAdmin) {
-			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
-		}			
+		List<SimpleGrantedAuthority> authorities = new LinkedList<>();
 		
-		return roles;
+		claims.forEach((k,v) -> {						
+			if(k == AuthorityIdentityType.ADMIN && Boolean.parseBoolean(v.toString()))
+				authorities.add(new SimpleGrantedAuthority(AuthorityType.ADMIN));
+			if(k == AuthorityIdentityType.USER && Boolean.parseBoolean(v.toString()))
+				authorities.add(new SimpleGrantedAuthority(AuthorityType.USER));
+		});		
+				
+		return authorities;
+	}
+	public Map<String, Object> getMapFromIoJsonwebtokenClaims(Claims claims) {
+		Map<String, Object> expectedMap = new HashMap<String, Object>();
+		for (Entry<String, Object> entry : claims.entrySet()) {
+			expectedMap.put(entry.getKey(), entry.getValue());
+		}
+		return expectedMap;
 	}
 }
 

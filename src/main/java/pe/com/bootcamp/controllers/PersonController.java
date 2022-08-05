@@ -22,7 +22,7 @@ public class PersonController implements IPersonController {
 	@Autowired
 	public PersonData personData;
 
-	@Override
+	@Override	
 	public CreateResponse create(CreateRequest person) throws CloneNotSupportedException {
 		return new CreateResponse(personData.create(
 				Person.builder()
@@ -43,8 +43,8 @@ public class PersonController implements IPersonController {
 	}
 
 	@Override
-	public FindByIdentNumberResponse findByIdentNumber(String identNumber) {
-		return new FindByIdentNumberResponse(personData.findByIdentNumber(identNumber));
+	public FindByIdentNumberResponse findByIdentNumber(String typeOfIdentityDocument, String identificationNumber) {
+		return new FindByIdentNumberResponse(personData.findByIdentNumber(typeOfIdentityDocument, identificationNumber));
 	}
 
 	@Override
@@ -53,7 +53,7 @@ public class PersonController implements IPersonController {
 	}
 
 	@Override
-	public DeleteByIdentNumberResponse deleteByIdentNumber(String identNumber) {
-		return new DeleteByIdentNumberResponse(personData.deleteByIdentNumber(identNumber)); 
+	public DeleteByIdentNumberResponse deleteByIdentNumber(String typeOfIdentityDocument, String identificationNumber) {
+		return new DeleteByIdentNumberResponse(personData.deleteByIdentNumber(typeOfIdentityDocument, identificationNumber)); 
 	}		
 }

@@ -1,4 +1,4 @@
-package pe.com.bootcamp.services;
+package pe.com.bootcamp.testing.client.services;
 
 import java.net.URI;
 import java.net.http.HttpClient;
@@ -8,6 +8,7 @@ import java.util.concurrent.CompletableFuture;
 
 import com.google.gson.Gson;
 
+import pe.com.bootcamp.domain.entities.AuthenticationRequest;
 import pe.com.bootcamp.domain.entities.AuthenticationResponse;
 import pe.com.bootcamp.domain.entities.Person.CreateRequest;
 import pe.com.bootcamp.domain.entities.Person.CreateResponse;
@@ -17,12 +18,12 @@ import pe.com.bootcamp.domain.entities.Person.FindByIdentNumberResponse;
 import pe.com.bootcamp.domain.entities.Person.UpdateRequest;
 import pe.com.bootcamp.domain.entities.Person.UpdateResponse;
 
-public class AFPClientService implements IAFPClientService {
+public class DemoClientService implements IDemoClientService {
 
 	private String ApiHost = "http://localhost:8084";
 	
 	@Override
-	public AuthenticationResponse Authorization(String user, String password) {
+	public AuthenticationResponse Authorization(AuthenticationRequest auth) {
 		
 		AuthenticationResponse result = new AuthenticationResponse();
 		try {
@@ -32,7 +33,7 @@ public class AFPClientService implements IAFPClientService {
 		        .uri(URI.create(ApiHost + "/authenticate"))
 		        .header("Content-Type", "application/json")
 		        .header("Accept", "application/json")
-		        .POST(HttpRequest.BodyPublishers.ofString(Serialize(user)))
+		        .POST(HttpRequest.BodyPublishers.ofString(Serialize(auth)))
 		        .build();
 	
 		    CompletableFuture<HttpResponse<String>> completableFuture =

@@ -11,6 +11,8 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import pe.com.bootcamp.constants.AuthorityType;
+
 @Service
 public class AuthenticationService implements UserDetailsService {
 
@@ -22,11 +24,11 @@ public class AuthenticationService implements UserDetailsService {
 		List<SimpleGrantedAuthority> roles = new ArrayList<>();
 		
 		if("lcochachi-admin".equals(username)) {
-			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_ADMIN"));
+			roles = Arrays.asList(new SimpleGrantedAuthority(AuthorityType.ADMIN));
 			return new User("lcochachi-admin", "$2a$10$7XHA3w1L8xXQEzotbFMe8.EOh5ik2CppGjRanseUpSc0hgpK79cvK", roles);
 		}else if("lcochachi-user".equals(username))
 		{
-			roles = Arrays.asList(new SimpleGrantedAuthority("ROLE_USER"));
+			roles = Arrays.asList(new SimpleGrantedAuthority(AuthorityType.USER));
 			return new User("lcochachi-user", "$2a$10$7XHA3w1L8xXQEzotbFMe8.EOh5ik2CppGjRanseUpSc0hgpK79cvK", roles);
 		}
 		else
